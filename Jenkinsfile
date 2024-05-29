@@ -10,7 +10,7 @@ pipeline {
     }
         stage('Build') {
       steps {
-        sh 'chmod a+x mvn'
+       // sh 'chmod a+x mvn'
         sh './mvn clean package -DskipTests=true'
       }
 
